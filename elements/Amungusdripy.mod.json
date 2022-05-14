@@ -1,0 +1,19 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "drip_disk",
+    "name": "Amung us",
+    "description": "Amung us is dripy",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:amungdrip"
+    },
+    "specialInfo": [
+      "Amung us is dripy"
+    ],
+    "hasGlow": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dweem",
+    "name": "Dweem",
+    "description": "this is dweemy",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:dweem"
+    },
+    "specialInfo": [
+      "this is dweemy"
+    ],
+    "hasGlow": false
+  }
+}

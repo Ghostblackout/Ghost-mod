@@ -1,0 +1,265 @@
+{
+  "mod_elements": [
+    {
+      "name": "Dweem",
+      "type": "musicdisc",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dweem"
+    },
+    {
+      "name": "Amungusdripy",
+      "type": "musicdisc",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amungusdripy"
+    },
+    {
+      "name": "Copperpicaxe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperpicaxe"
+    },
+    {
+      "name": "CopperArmor",
+      "type": "armor",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Coppersword",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppersword"
+    },
+    {
+      "name": "CopperAxe",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe"
+    },
+    {
+      "name": "Coppershovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppershovel"
+    },
+    {
+      "name": "Copperhoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperhoe"
+    },
+    {
+      "name": "CopperChestplate",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chestplate"
+    },
+    {
+      "name": "CopperHelmet",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_helmet"
+    },
+    {
+      "name": "Copperleggings",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperleggings"
+    },
+    {
+      "name": "Copperboots",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperboots"
+    },
+    {
+      "name": "Coppersw0rd",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppersw_0rd"
+    },
+    {
+      "name": "Copperplcaxe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperplcaxe"
+    },
+    {
+      "name": "Copperh0e",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperh_0e"
+    },
+    {
+      "name": "CopperAx3",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ax_3"
+    },
+    {
+      "name": "CopperShvel",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shvel"
+    },
+    {
+      "name": "Vudca",
+      "type": "potion",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vudca"
+    },
+    {
+      "name": "Coffindace",
+      "type": "musicdisc",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coffindace"
+    },
+    {
+      "name": "Coppergolel",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppergolel"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "drip",
+      "files": [
+        "among_us_drip_theme_song_original_among_us_trap_remix_amogus_meme_music"
+      ],
+      "category": "record",
+      "subtitle": "dripy"
+    },
+    {
+      "name": "dripy",
+      "files": [
+        "among_us_drip_theme_song_original_among_us_trap_remix_amogus_meme_music"
+      ],
+      "category": "master",
+      "subtitle": "drip"
+    },
+    {
+      "name": "dweem",
+      "files": [
+        "dweem"
+      ],
+      "category": "master",
+      "subtitle": "dweem"
+    },
+    {
+      "name": "amungdrip",
+      "files": [
+        "among_us_drip"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "cofindanc",
+      "files": [
+        "coffin_dance"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.dweem": "dweem",
+      "item.minecraft.splash_potion.effect.vudca": "Splash of vodka",
+      "item.minecraft.tipped_arrow.effect.vudca": "Arrow of vodka",
+      "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
+      "subtitles.dripy": "drip",
+      "subtitles.amungdrip": "",
+      "item.ghost_land_mod.copperpicaxe": "Copper pickaxe",
+      "advancements.coppergolel.title": "Coppergolel",
+      "item.ghost_land_mod.copper_armor_helmet": "Copper Helmet",
+      "advancements.coppergolel.descr": "get a copper helment",
+      "subtitles.cofindanc": "",
+      "item.minecraft.potion.effect.vudca": "vodka",
+      "item.ghost_land_mod.copper_armor_leggings": "Copper Leggings",
+      "item.ghost_land_mod.dweem.desc": "this is dweemy",
+      "item.ghost_land_mod.copper_armor_boots": "Copper Boots",
+      "item.ghost_land_mod.coppershovel": "Coppershovel",
+      "item.ghost_land_mod.coppersword": "Coppersword",
+      "item.ghost_land_mod.copper_axe": "Copper Axe",
+      "item.minecraft.lingering_potion.effect.vudca": "Lingering of vodka",
+      "item.ghost_land_mod.copperhoe": "Copperhoe",
+      "item.ghost_land_mod.coffindace": "Coffindace",
+      "item.ghost_land_mod.copper_armor_chestplate": "Copper Body",
+      "item.ghost_land_mod.amungusdripy": "Amung us",
+      "subtitles.drip": "dripy",
+      "item.ghost_land_mod.coffindace.desc": "dance cofen",
+      "item.ghost_land_mod.dweem": "Dweem"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ghost_land_mod",
+    "modName": "ghost land mod",
+    "version": "1.0.0",
+    "author": "ghost, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.ghostlandmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200119518
+}

@@ -1,0 +1,50 @@
+{
+  "drip": {
+    "category": "record",
+    "subtitle": "subtitles.drip",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:among_us_drip_theme_song_original_among_us_trap_remix_amogus_meme_music",
+        "stream": true
+      }
+    ]
+  },
+  "dripy": {
+    "category": "master",
+    "subtitle": "subtitles.dripy",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:among_us_drip_theme_song_original_among_us_trap_remix_amogus_meme_music",
+        "stream": false
+      }
+    ]
+  },
+  "dweem": {
+    "category": "master",
+    "subtitle": "subtitles.dweem",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:dweem",
+        "stream": false
+      }
+    ]
+  },
+  "amungdrip": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:among_us_drip",
+        "stream": false
+      }
+    ]
+  },
+  "cofindanc": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:coffin_dance",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dance",
+    "name": "Coffindace",
+    "description": "dance cofen",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:cofindanc"
+    },
+    "specialInfo": [
+      "dance cofen"
+    ],
+    "hasGlow": false
+  }
+}
