@@ -165,6 +165,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "coppergolel"
+    },
+    {
+      "name": "Thedweem",
+      "type": "biome",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thedweem"
+    },
+    {
+      "name": "Deewm",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deewm"
     }
   ],
   "variable_elements": [],
@@ -208,6 +224,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "dweem_scrrem",
+      "files": [
+        "dweem_scrrem"
+      ],
+      "category": "neutral",
+      "subtitle": "dweem_scrreming"
     }
   ],
   "language_map": {
@@ -215,15 +239,18 @@
       "subtitles.dweem": "dweem",
       "item.minecraft.splash_potion.effect.vudca": "Splash of vodka",
       "item.minecraft.tipped_arrow.effect.vudca": "Arrow of vodka",
+      "entity.ghost_land_mod.deewm": "Deewm",
       "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
       "subtitles.dripy": "drip",
-      "subtitles.amungdrip": "",
       "item.ghost_land_mod.copperpicaxe": "Copper pickaxe",
+      "subtitles.amungdrip": "",
+      "biome.ghost_land_mod.thedweem": "Thedweem",
       "advancements.coppergolel.title": "Coppergolel",
       "item.ghost_land_mod.copper_armor_helmet": "Copper Helmet",
       "advancements.coppergolel.descr": "get a copper helment",
       "subtitles.cofindanc": "",
       "item.minecraft.potion.effect.vudca": "vodka",
+      "item.ghost_land_mod.deewm_spawn_egg": "Deewm Spawn Egg",
       "item.ghost_land_mod.copper_armor_leggings": "Copper Leggings",
       "item.ghost_land_mod.dweem.desc": "this is dweemy",
       "item.ghost_land_mod.copper_armor_boots": "Copper Boots",
@@ -231,6 +258,7 @@
       "item.ghost_land_mod.coppersword": "Coppersword",
       "item.ghost_land_mod.copper_axe": "Copper Axe",
       "item.minecraft.lingering_potion.effect.vudca": "Lingering of vodka",
+      "subtitles.dweem_scrrem": "dweem_scrreming",
       "item.ghost_land_mod.copperhoe": "Copperhoe",
       "item.ghost_land_mod.coffindace": "Coffindace",
       "item.ghost_land_mod.copper_armor_chestplate": "Copper Body",

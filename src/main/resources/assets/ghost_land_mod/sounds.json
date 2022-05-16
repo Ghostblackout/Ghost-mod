@@ -46,5 +46,15 @@
         "stream": false
       }
     ]
+  },
+  "dweem_scrrem": {
+    "category": "neutral",
+    "subtitle": "subtitles.dweem_scrrem",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:dweem_scrrem",
+        "stream": false
+      }
+    ]
   }
 }

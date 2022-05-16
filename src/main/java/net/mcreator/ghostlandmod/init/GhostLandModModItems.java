@@ -7,8 +7,10 @@ package net.mcreator.ghostlandmod.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
 import net.mcreator.ghostlandmod.item.DweemItem;
 import net.mcreator.ghostlandmod.item.CopperswordItem;
@@ -36,4 +38,6 @@ public class GhostLandModModItems {
 	public static final RegistryObject<Item> COPPERSHOVEL = REGISTRY.register("coppershovel", () -> new CoppershovelItem());
 	public static final RegistryObject<Item> COPPERHOE = REGISTRY.register("copperhoe", () -> new CopperhoeItem());
 	public static final RegistryObject<Item> COFFINDACE = REGISTRY.register("coffindace", () -> new CoffindaceItem());
+	public static final RegistryObject<Item> DEEWM = REGISTRY.register("deewm_spawn_egg",
+			() -> new ForgeSpawnEggItem(GhostLandModModEntities.DEEWM, -13369549, -16711885, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }

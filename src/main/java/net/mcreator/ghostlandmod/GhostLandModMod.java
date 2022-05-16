@@ -28,6 +28,8 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.ghostlandmod.init.GhostLandModModPotions;
 import net.mcreator.ghostlandmod.init.GhostLandModModItems;
+import net.mcreator.ghostlandmod.init.GhostLandModModEntities;
+import net.mcreator.ghostlandmod.init.GhostLandModModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -47,8 +49,10 @@ public class GhostLandModMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		GhostLandModModItems.REGISTRY.register(bus);
+		GhostLandModModEntities.REGISTRY.register(bus);
 
 		GhostLandModModPotions.REGISTRY.register(bus);
+		GhostLandModModBiomes.REGISTRY.register(bus);
 
 	}
 
