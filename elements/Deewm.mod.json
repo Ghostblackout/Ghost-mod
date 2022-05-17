@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16711885,
+      "value": -6684826,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -80,7 +80,7 @@
       "value": "CUSTOM:Dweemdiskfragment"
     },
     "livingSound": {
-      "value": "CUSTOM:dweem"
+      "value": ""
     },
     "hurtSound": {
       "value": "CUSTOM:dweem_scrrem"

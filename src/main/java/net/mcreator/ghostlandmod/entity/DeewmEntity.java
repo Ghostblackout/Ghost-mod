@@ -85,11 +85,6 @@ public class DeewmEntity extends PathfinderMob {
 	}
 
 	@Override
-	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ghost_land_mod:dweem"));
-	}
-
-	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ghost_land_mod:dweem_scrrem"));
 	}

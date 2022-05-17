@@ -40,6 +40,6 @@ public class GhostLandModModItems {
 	public static final RegistryObject<Item> COPPERHOE = REGISTRY.register("copperhoe", () -> new CopperhoeItem());
 	public static final RegistryObject<Item> COFFINDACE = REGISTRY.register("coffindace", () -> new CoffindaceItem());
 	public static final RegistryObject<Item> DREEM = REGISTRY.register("dreem_spawn_egg",
-			() -> new ForgeSpawnEggItem(GhostLandModModEntities.DREEM, -13369549, -16711885, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(GhostLandModModEntities.DREEM, -13369549, -6684826, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> DWEEMDISKFRAGMENT = REGISTRY.register("dweemdiskfragment", () -> new DweemdiskfragmentItem());
 }

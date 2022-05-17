@@ -143,14 +143,6 @@
       "registry_name": "copper_shvel"
     },
     {
-      "name": "Vudca",
-      "type": "potion",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vudca"
-    },
-    {
       "name": "Coffindace",
       "type": "musicdisc",
       "sortid": 24,
@@ -254,8 +246,6 @@
     "en_us": {
       "subtitles.dweem": "dweem",
       "item.ghost_land_mod.dreem_spawn_egg": "Dreem Spawn Egg",
-      "item.minecraft.splash_potion.effect.vudca": "Splash of vodka",
-      "item.minecraft.tipped_arrow.effect.vudca": "Arrow of vodka",
       "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
       "item.ghost_land_mod.dweemdiskfragment": "Dweem disk fragment",
       "subtitles.dripy": "drip",
@@ -267,14 +257,12 @@
       "advancements.coppergolel.descr": "get a copper helment",
       "entity.ghost_land_mod.dreem": "Dreem",
       "subtitles.cofindanc": "",
-      "item.minecraft.potion.effect.vudca": "vodka",
       "item.ghost_land_mod.copper_armor_leggings": "Copper Leggings",
       "item.ghost_land_mod.dweem.desc": "this is dweemy",
       "item.ghost_land_mod.copper_armor_boots": "Copper Boots",
       "item.ghost_land_mod.coppershovel": "Coppershovel",
       "item.ghost_land_mod.coppersword": "Coppersword",
       "item.ghost_land_mod.copper_axe": "Copper Axe",
-      "item.minecraft.lingering_potion.effect.vudca": "Lingering of vodka",
       "subtitles.dweem_scrrem": "dweem_scrreming",
       "item.ghost_land_mod.copperhoe": "Copperhoe",
       "item.ghost_land_mod.coffindace": "Coffindace",

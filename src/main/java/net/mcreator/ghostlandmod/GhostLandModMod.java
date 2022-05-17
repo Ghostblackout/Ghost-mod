@@ -26,7 +26,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.ghostlandmod.init.GhostLandModModPotions;
 import net.mcreator.ghostlandmod.init.GhostLandModModItems;
 import net.mcreator.ghostlandmod.init.GhostLandModModEntities;
 import net.mcreator.ghostlandmod.init.GhostLandModModBiomes;
@@ -51,7 +50,6 @@ public class GhostLandModMod {
 		GhostLandModModItems.REGISTRY.register(bus);
 		GhostLandModModEntities.REGISTRY.register(bus);
 
-		GhostLandModModPotions.REGISTRY.register(bus);
 		GhostLandModModBiomes.REGISTRY.register(bus);
 
 	}
