@@ -31,6 +31,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.ghostlandmod.world.biome.ThedweemBiome;
+import net.mcreator.ghostlandmod.world.biome.SusBiome;
 import net.mcreator.ghostlandmod.GhostLandModMod;
 
 import java.util.Map;
@@ -43,11 +44,13 @@ import com.mojang.datafixers.util.Pair;
 public class GhostLandModModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, GhostLandModMod.MODID);
 	public static final RegistryObject<Biome> THEDWEEM = REGISTRY.register("thedweem", () -> ThedweemBiome.createBiome());
+	public static final RegistryObject<Biome> SUS = REGISTRY.register("sus", () -> SusBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ThedweemBiome.init();
+			SusBiome.init();
 		});
 	}
 
@@ -68,6 +71,10 @@ public class GhostLandModModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(ThedweemBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, THEDWEEM.getId()))));
+						parameters.add(new Pair<>(SusBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SUS.getId()))));
+						parameters.add(new Pair<>(SusBiome.PARAMETER_POINT_UNDERGROUND,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SUS.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -81,7 +88,14 @@ public class GhostLandModModBiomes {
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1,
+									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SUS.getId()), Blocks.LIME_CONCRETE.defaultBlockState(),
+											Blocks.WHITE_CONCRETE.defaultBlockState(), Blocks.WHITE_CONCRETE.defaultBlockState()));
+							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, THEDWEEM.getId()),
+											Blocks.LIME_CONCRETE.defaultBlockState(), Blocks.WHITE_CONCRETE.defaultBlockState(),
+											Blocks.WHITE_CONCRETE.defaultBlockState()));
+							surfaceRules.add(1,
+									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SUS.getId()),
 											Blocks.LIME_CONCRETE.defaultBlockState(), Blocks.WHITE_CONCRETE.defaultBlockState(),
 											Blocks.WHITE_CONCRETE.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
@@ -111,6 +125,16 @@ public class GhostLandModModBiomes {
 																	SurfaceRules.state(groundBlock)), SurfaceRules.state(underwaterBlock))),
 													SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR),
 															SurfaceRules.state(undergroundBlock)))));
+		}
+
+		private static SurfaceRules.RuleSource anySurfaceRule(ResourceKey<Biome> biomeKey, BlockState groundBlock, BlockState undergroundBlock,
+				BlockState underwaterBlock) {
+			return SurfaceRules.ifTrue(SurfaceRules.isBiome(biomeKey),
+					SurfaceRules.sequence(
+							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, 0, CaveSurface.FLOOR),
+									SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.waterBlockCheck(-1, 0), SurfaceRules.state(groundBlock)),
+											SurfaceRules.state(underwaterBlock))),
+							SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, 0, CaveSurface.FLOOR), SurfaceRules.state(undergroundBlock))));
 		}
 	}
 }

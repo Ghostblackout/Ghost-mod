@@ -12,7 +12,6 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-import net.mcreator.ghostlandmod.item.STIKItem;
 import net.mcreator.ghostlandmod.item.DweemdiskfragmentItem;
 import net.mcreator.ghostlandmod.item.DweemItem;
 import net.mcreator.ghostlandmod.item.DripfragmentItem;
@@ -47,5 +46,4 @@ public class GhostLandModModItems {
 	public static final RegistryObject<Item> AMUNGUS = REGISTRY.register("amungus_spawn_egg",
 			() -> new ForgeSpawnEggItem(GhostLandModModEntities.AMUNGUS, -65485, -52429, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> DRIPFRAGMENT = REGISTRY.register("dripfragment", () -> new DripfragmentItem());
-	public static final RegistryObject<Item> STIK = REGISTRY.register("stik", () -> new STIKItem());
 }
