@@ -51,7 +51,7 @@
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "spawnBiome": false,
+    "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 10,
@@ -106,6 +106,16 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Deewm"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

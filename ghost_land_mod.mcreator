@@ -181,6 +181,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "deewm"
+    },
+    {
+      "name": "Dweemdiskfragment",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dweemdiskfragment"
+    },
+    {
+      "name": "Dweemdiskcraft",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dweemdiskcraft"
     }
   ],
   "variable_elements": [],
@@ -241,6 +257,7 @@
       "item.minecraft.tipped_arrow.effect.vudca": "Arrow of vodka",
       "entity.ghost_land_mod.deewm": "Deewm",
       "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
+      "item.ghost_land_mod.dweemdiskfragment": "Dweem disk fragment",
       "subtitles.dripy": "drip",
       "item.ghost_land_mod.copperpicaxe": "Copper pickaxe",
       "subtitles.amungdrip": "",

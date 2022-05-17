@@ -17,9 +17,11 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.sounds.SoundEvent;
@@ -33,12 +35,18 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.mcreator.ghostlandmod.world.features.treedecorators.ThedweemTrunkDecorator;
 import net.mcreator.ghostlandmod.world.features.treedecorators.ThedweemLeaveDecorator;
 import net.mcreator.ghostlandmod.world.features.treedecorators.ThedweemFruitDecorator;
+import net.mcreator.ghostlandmod.init.GhostLandModModEntities;
 
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
 
 public class ThedweemBiome {
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
+			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
+			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
+			Climate.Parameter.span(0.564629713984f, 0.850343999698f), 0);
+
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-16711834).waterFogColor(-6684775)
 				.skyColor(7972607).foliageColorOverride(-16738048).grassColorOverride(-13369549)
@@ -78,6 +86,7 @@ public class ThedweemBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(GhostLandModModEntities.DEEWM.get(), 20, 4, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f)
 				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();

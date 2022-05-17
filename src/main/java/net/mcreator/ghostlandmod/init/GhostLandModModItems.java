@@ -12,6 +12,7 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
+import net.mcreator.ghostlandmod.item.DweemdiskfragmentItem;
 import net.mcreator.ghostlandmod.item.DweemItem;
 import net.mcreator.ghostlandmod.item.CopperswordItem;
 import net.mcreator.ghostlandmod.item.CoppershovelItem;
@@ -40,4 +41,5 @@ public class GhostLandModModItems {
 	public static final RegistryObject<Item> COFFINDACE = REGISTRY.register("coffindace", () -> new CoffindaceItem());
 	public static final RegistryObject<Item> DEEWM = REGISTRY.register("deewm_spawn_egg",
 			() -> new ForgeSpawnEggItem(GhostLandModModEntities.DEEWM, -13369549, -16711885, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DWEEMDISKFRAGMENT = REGISTRY.register("dweemdiskfragment", () -> new DweemdiskfragmentItem());
 }
