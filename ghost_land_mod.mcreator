@@ -180,7 +180,7 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "deewm"
+      "registry_name": "dreem"
     },
     {
       "name": "Dweemdiskfragment",
@@ -253,9 +253,9 @@
   "language_map": {
     "en_us": {
       "subtitles.dweem": "dweem",
+      "item.ghost_land_mod.dreem_spawn_egg": "Dreem Spawn Egg",
       "item.minecraft.splash_potion.effect.vudca": "Splash of vodka",
       "item.minecraft.tipped_arrow.effect.vudca": "Arrow of vodka",
-      "entity.ghost_land_mod.deewm": "Deewm",
       "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
       "item.ghost_land_mod.dweemdiskfragment": "Dweem disk fragment",
       "subtitles.dripy": "drip",
@@ -265,9 +265,9 @@
       "advancements.coppergolel.title": "Coppergolel",
       "item.ghost_land_mod.copper_armor_helmet": "Copper Helmet",
       "advancements.coppergolel.descr": "get a copper helment",
+      "entity.ghost_land_mod.dreem": "Dreem",
       "subtitles.cofindanc": "",
       "item.minecraft.potion.effect.vudca": "vodka",
-      "item.ghost_land_mod.deewm_spawn_egg": "Deewm Spawn Egg",
       "item.ghost_land_mod.copper_armor_leggings": "Copper Leggings",
       "item.ghost_land_mod.dweem.desc": "this is dweemy",
       "item.ghost_land_mod.copper_armor_boots": "Copper Boots",

@@ -15,6 +15,6 @@ import net.mcreator.ghostlandmod.client.renderer.DeewmRenderer;
 public class GhostLandModModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(GhostLandModModEntities.DEEWM.get(), DeewmRenderer::new);
+		event.registerEntityRenderer(GhostLandModModEntities.DREEM.get(), DeewmRenderer::new);
 	}
 }

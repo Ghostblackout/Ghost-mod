@@ -46,11 +46,11 @@ public class DeewmEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(GhostLandModModEntities.DEEWM.get(), 25, 2, 3));
+			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(GhostLandModModEntities.DREEM.get(), 25, 2, 3));
 	}
 
 	public DeewmEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(GhostLandModModEntities.DEEWM.get(), world);
+		this(GhostLandModModEntities.DREEM.get(), world);
 	}
 
 	public DeewmEntity(EntityType<DeewmEntity> type, Level world) {
@@ -111,7 +111,7 @@ public class DeewmEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(GhostLandModModEntities.DEEWM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(GhostLandModModEntities.DREEM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}

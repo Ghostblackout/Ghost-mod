@@ -22,7 +22,7 @@ import net.mcreator.ghostlandmod.GhostLandModMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GhostLandModModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, GhostLandModMod.MODID);
-	public static final RegistryObject<EntityType<DeewmEntity>> DEEWM = register("deewm",
+	public static final RegistryObject<EntityType<DeewmEntity>> DREEM = register("dreem",
 			EntityType.Builder.<DeewmEntity>of(DeewmEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(DeewmEntity::new)
 
@@ -41,6 +41,6 @@ public class GhostLandModModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(DEEWM.get(), DeewmEntity.createAttributes().build());
+		event.put(DREEM.get(), DeewmEntity.createAttributes().build());
 	}
 }
