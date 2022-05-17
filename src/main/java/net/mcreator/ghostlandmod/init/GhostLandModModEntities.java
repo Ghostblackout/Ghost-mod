@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ghostlandmod.entity.DeewmEntity;
+import net.mcreator.ghostlandmod.entity.AmungusEntity;
 import net.mcreator.ghostlandmod.GhostLandModMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -25,6 +26,11 @@ public class GhostLandModModEntities {
 	public static final RegistryObject<EntityType<DeewmEntity>> DREEM = register("dreem",
 			EntityType.Builder.<DeewmEntity>of(DeewmEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(DeewmEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AmungusEntity>> AMUNGUS = register("amungus",
+			EntityType.Builder.<AmungusEntity>of(AmungusEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(AmungusEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -36,11 +42,13 @@ public class GhostLandModModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			DeewmEntity.init();
+			AmungusEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(DREEM.get(), DeewmEntity.createAttributes().build());
+		event.put(AMUNGUS.get(), AmungusEntity.createAttributes().build());
 	}
 }

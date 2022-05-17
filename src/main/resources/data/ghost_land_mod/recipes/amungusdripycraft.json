@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "1": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "2": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "3": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "5": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "6": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "7": {
+      "item": "ghost_land_mod:dripfragment"
+    },
+    "8": {
+      "item": "ghost_land_mod:dripfragment"
+    }
+  },
+  "result": {
+    "item": "ghost_land_mod:amungusdripy",
+    "count": 1
+  }
+}

@@ -24,6 +24,8 @@ public class GhostLandModModSounds {
 		REGISTRY.put(new ResourceLocation("ghost_land_mod", "amungdrip"), new SoundEvent(new ResourceLocation("ghost_land_mod", "amungdrip")));
 		REGISTRY.put(new ResourceLocation("ghost_land_mod", "cofindanc"), new SoundEvent(new ResourceLocation("ghost_land_mod", "cofindanc")));
 		REGISTRY.put(new ResourceLocation("ghost_land_mod", "dweem_scrrem"), new SoundEvent(new ResourceLocation("ghost_land_mod", "dweem_scrrem")));
+		REGISTRY.put(new ResourceLocation("ghost_land_mod", "amung_us_kill"),
+				new SoundEvent(new ResourceLocation("ghost_land_mod", "amung_us_kill")));
 	}
 
 	@SubscribeEvent

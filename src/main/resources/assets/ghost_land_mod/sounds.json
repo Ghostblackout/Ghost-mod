@@ -56,5 +56,15 @@
         "stream": false
       }
     ]
+  },
+  "amung_us_kill": {
+    "category": "neutral",
+    "subtitle": "subtitles.amung_us_kill",
+    "sounds": [
+      {
+        "name": "ghost_land_mod:among_us_killogg",
+        "stream": false
+      }
+    ]
   }
 }

@@ -189,6 +189,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dweemdiskcraft"
+    },
+    {
+      "name": "Amungus",
+      "type": "livingentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amungus"
+    },
+    {
+      "name": "Dripfragment",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dripfragment"
+    },
+    {
+      "name": "Amungusdripycraft",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amungusdripycraft"
+    },
+    {
+      "name": "STIK",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stik"
+    },
+    {
+      "name": "STIKRightclicked",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stik_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -240,17 +300,27 @@
       ],
       "category": "neutral",
       "subtitle": "dweem_scrreming"
+    },
+    {
+      "name": "amung_us_kill",
+      "files": [
+        "among_us_killogg"
+      ],
+      "category": "neutral",
+      "subtitle": "amung_us_kill"
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.dweem": "dweem",
       "item.ghost_land_mod.dreem_spawn_egg": "Dreem Spawn Egg",
+      "item.ghost_land_mod.amungus_spawn_egg": "imposter Spawn Egg",
       "item.ghost_land_mod.amungusdripy.desc": "Amung us is dripy",
       "item.ghost_land_mod.dweemdiskfragment": "Dweem disk fragment",
       "subtitles.dripy": "drip",
       "item.ghost_land_mod.copperpicaxe": "Copper pickaxe",
       "subtitles.amungdrip": "",
+      "entity.ghost_land_mod.amungus": "imposter",
       "biome.ghost_land_mod.thedweem": "Thedweem",
       "advancements.coppergolel.title": "Coppergolel",
       "item.ghost_land_mod.copper_armor_helmet": "Copper Helmet",
@@ -264,9 +334,12 @@
       "item.ghost_land_mod.coppersword": "Coppersword",
       "item.ghost_land_mod.copper_axe": "Copper Axe",
       "subtitles.dweem_scrrem": "dweem_scrreming",
+      "item.ghost_land_mod.stik": "STIK",
       "item.ghost_land_mod.copperhoe": "Copperhoe",
       "item.ghost_land_mod.coffindace": "Coffindace",
+      "subtitles.amung_us_kill": "amung_us_kill",
       "item.ghost_land_mod.copper_armor_chestplate": "Copper Body",
+      "item.ghost_land_mod.dripfragment": "Dweem disk fragment",
       "item.ghost_land_mod.amungusdripy": "Amung us",
       "subtitles.drip": "dripy",
       "item.ghost_land_mod.coffindace.desc": "dance cofen",

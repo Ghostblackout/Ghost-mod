@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.ghostlandmod.client.renderer.DeewmRenderer;
+import net.mcreator.ghostlandmod.client.renderer.AmungusRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class GhostLandModModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(GhostLandModModEntities.DREEM.get(), DeewmRenderer::new);
+		event.registerEntityRenderer(GhostLandModModEntities.AMUNGUS.get(), AmungusRenderer::new);
 	}
 }
